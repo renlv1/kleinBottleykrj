@@ -1,0 +1,324 @@
+.red{
+  color: #FC534C;
+}
+.green{
+  color: #10d1a1;
+}
+/* 移动端容器样式 */
+.container-mobile{
+  margin: 0 15px;
+  min-height: 100vh;
+  height: auto;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+  @media screen and (max-width: 1200px), handheld and (orientation: landscape) {
+    display: block;
+  }
+}
+/* 移动端表格的基础样式 */
+/* 左右样式 */
+@odd-color: #edeff1;
+@even-color: #fafafa;
+.table-mobile {
+  ul {
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      font-size: 14px;
+      @media screen and (max-width: 320px) {
+        font-size: 12px
+      }
+      &:nth-child(odd) {
+        background-color: @odd-color;
+      }
+      &:nth-child(even) {
+        background-color: @even-color;
+      }
+      span{
+        font-size: 14px;
+        @media screen and (max-width: 320px) {
+          font-size: 12px
+        }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+          font-size: 16px
+        }
+      }
+    }
+  }
+}
+// 去掉搜狗密码软键盘
+input::-webkit-input-safebox-button {
+  display:none;
+}
+#sogou_secure_inputs_container {
+  display:none;
+}
+.error{
+  color: #e60000;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+/* 上下样式 */
+.table-all-mobile{
+  ul{
+    li{
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0px;
+      justify-content: space-between;
+      span{
+        font-size: 14px;
+        @media screen and (max-width: 320px) {
+          font-size: 12px
+        }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+          font-size: 16px
+        }
+      }
+    }
+  }
+}
+.table-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: @odd-color;
+  padding: 10px 15px;
+}
+.table-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: @even-color;
+  padding: 10px 15px;
+}
+
+/* 头部基础样式 */
+.head-mobile{
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fff;
+  position: fixed;
+  border-bottom: 1px solid #ccc;
+}
+/* 头部的返回按钮 */
+.back-mobile{
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  background: url("../../assets/images/aiChat/back.png");
+  background-size: 17px 13px;
+  width: 17px;
+  height: 13px;
+}
+/* 头部的标题 */
+.title-mobile{
+  font-size: 16px;
+  color: #1a1a1a;
+  font-weight: bold;
+  @media screen and (min-width: 415px) and (max-width: 1200px) {
+  font-size: 18px;
+}
+}
+
+/* 红色虚线的样式 */
+.dashed {
+  height: 1px;
+  background-image: url("../../assets/images/myAccount/dashed.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+/* PC端banner图样式 */
+.pc-banner{
+  margin: 0 auto;
+  width: 87%;
+  height: 780px;
+  //background: url("../../assets/images/eatGame/bg.svg") no-repeat;
+  //background-color: #020204;
+  //background-size: cover;
+  //background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* banner图内文字样式 */
+.banner-text {
+  margin-top: 40px;
+  width: 46%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Microsoft YaHei UI";
+  @media screen and (max-width: 1200px) {
+    width: 80%
+  }
+  h3{
+    text-align: center;
+  }
+  p{
+    margin-top: 47px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 2.5;
+  }
+}
+
+/* PC端表格样式 */
+/* 表格大标题 */
+.table-container-title{
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #181818;
+}
+/* 表格副标题 */
+.table-container{
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  thead{
+    display: block;
+    .highLight{
+      color: #181818;
+    }
+    span{
+      margin-right: 5px;
+    }
+    h6{
+      background-color: @odd-color;
+      height: 64px;
+      font-size:20px;
+      color: #181818;
+      align-items: center;
+      display: flex;
+      @media screen and (max-width: 1200px) {
+        font-size: 16px;
+      }
+      &:before{
+        content: '';
+        width: 10px;
+        height: 22px;
+        display: inline-block;
+        background-color: #000;
+        margin-right: 28px;
+      }
+      span{
+        margin:0 10px;
+      }
+    }
+    tr{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      width: 100%;
+      background-color: #fbfbfb;
+      font-size: 16px;
+      @media screen and (max-width: 1200px) {
+        font-size: 14px;
+      }
+      td{
+        display: block;
+        flex: 2;
+        text-align: center;
+        &.more-width{
+          flex:2.5;
+        }
+        &.less-width{
+          flex:1.5;
+        }
+      }
+    }
+  }
+  tbody{
+    width: 100%;
+    display: block;
+    tr{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      width: 100%;
+      font-size: 14px;
+      @media screen and (max-width: 1200px) {
+        font-size: 12px;
+      }
+      &.cursor{
+        cursor: pointer;
+        &.hasId{
+          cursor: not-allowed;
+          .handle{
+            color: #ccc;
+          }
+        }
+      }
+      &:nth-child(odd) {
+        background-color: @odd;
+      }
+      &:nth-child(even) {
+        background-color: @even;
+      }
+      &:hover{
+        box-shadow: 0px -4px 15px rgba(196,205,214,0.8);
+        font-weight: bold;
+      }
+      td{
+        display: block;
+        flex: 2;
+        text-align: center;
+        &.more-width{
+          flex:2.5;
+        }
+        &.less-width{
+          flex:1.5;
+        }
+        &.handle{
+          user-select:none;
+          color: #fc534c;
+          a{
+            color: #fc534c;;
+            user-select:none;
+          }
+        }
+        &.money{
+          color: #fc534c
+        }
+      }
+    }
+  }
+  .queryErr{
+    color: #e60000;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+  }
+}
+.isClick{ // 可点击对象
+  cursor: pointer;
+  user-select: none;
+  &:active{
+    opacity: 0.6;
+  }
+}

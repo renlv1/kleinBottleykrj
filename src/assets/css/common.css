@@ -1,0 +1,47 @@
+html {
+  height: 100%;
+}
+html, #app {
+  background-color: #edeff1;
+}
+@media screen and (max-width: 1200px) {
+  html, #app {
+    background-color: #fff;
+  }
+}
+#app {
+  height: 100%;
+  margin-top: 110px;
+}
+@media screen and (max-width: 1200px) {
+  #app {
+    margin-top: 0;
+  }
+}
+body {
+  height: calc(100% - 252px);
+  background-color: #fff;
+  font-family: "Microsoft YaHei UI";
+}
+body.overflowHd {
+  overflow: hidden;
+}
+@media screen and (max-width: 1200px) {
+  body {
+    height: 100%;
+  }
+}
+.linWrap {
+  width: 1630px;
+  margin: 0 auto;
+}
+.linWrapContainer{
+  width: 1750px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1630px) {
+  .linWrap, .linWrapContainer {
+    width: 100%;
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,89 @@
+.pcTableDetial {
+  width: 100%;
+  tr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    width: 100%;
+    font-size: 14px;
+    padding: 0 20px;
+    word-break: break-all;
+    &:nth-child(odd) {
+      background-color: @odd;
+    }
+    &:nth-child(even) {
+      background-color: @even;
+    }
+    td{
+      display: block;
+      flex: 1;
+      text-align: left;
+    }
+  }
+}
+
+.mobile {
+  .management-head {
+    background-color: #fff;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    &:before{
+      content: '';
+      width: 90%;
+      height: 1px;
+      background-image: url("../../assets/images/aiChat/dottedLine.png");
+      position: absolute;
+      top: 50px;
+      left: 20px;
+      @media screen and (min-width: 768px) and (max-width: 1200px){
+        width: 96%;
+      }
+      @media screen and (min-width: 500px) and (max-width: 768px){
+        width: 94%;
+      }
+    }
+    .head {
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .back {
+        background-image: url(../../assets/images/myAccount/back.png);
+        width: 30px;
+        height: 50px;
+        background-size: 17px 13px;
+        background-repeat: no-repeat;
+        background-position: left center;
+        &:active {
+          opacity: 0.5;
+        }
+      }
+      .title {
+        text-align: center;
+        flex: 1;
+        font-size: 16px;
+        color: #1a1a1a;
+        font-weight: bold;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .right {
+        width: 32px;
+        height: 0;
+        background-color: transparent;
+      }
+    }
+  }
+}
+.error{
+  color: #e60000;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}

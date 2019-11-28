@@ -1,0 +1,828 @@
+.red {
+  color: #FC534C;
+}
+.green {
+  color: #10d1a1;
+}
+/* 移动端容器样式 */
+.container-mobile {
+  margin: 0 15px;
+  min-height: 100vh;
+  height: auto;
+}
+@media screen and (min-width: 1200px) {
+  .container-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px), handheld and (orientation: landscape) {
+  .container-mobile {
+    display: block;
+  }
+}
+/* 移动端表格的基础样式 */
+/* 左右样式 */
+.table-mobile ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+.table-mobile ul li:nth-child(odd) {
+  background-color: #edeff1;
+}
+.table-mobile ul li:nth-child(even) {
+  background-color: #fafafa;
+}
+.table-mobile ul li span {
+  font-size: 14px;
+}
+@media screen and (max-width: 320px) {
+  .table-mobile ul li span {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .table-mobile ul li span {
+    font-size: 16px;
+  }
+}
+.error {
+  color: #e60000;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+/* 上下样式 */
+.table-all-mobile ul li {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  justify-content: space-between;
+}
+.table-all-mobile ul li span {
+  font-size: 14px;
+}
+@media screen and (max-width: 320px) {
+  .table-all-mobile ul li span {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .table-all-mobile ul li span {
+    font-size: 16px;
+  }
+}
+.table-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #edeff1;
+  padding: 10px 15px;
+}
+.table-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 10px 15px;
+}
+/* 头部基础样式 */
+.head-mobile {
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fff;
+  position: fixed;
+  border-bottom: 1px solid #ccc;
+}
+/* 头部的返回按钮 */
+.back-mobile {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  background: url("../../assets/images/aiChat/back.png");
+  background-size: 17px 13px;
+  width: 17px;
+  height: 13px;
+}
+/* 头部的标题 */
+.title-mobile {
+  font-size: 16px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+@media screen and (min-width: 415px) and (max-width: 1200px) {
+  .title-mobile {
+    font-size: 18px;
+  }
+}
+/* 红色虚线的样式 */
+.dashed {
+  height: 1px;
+  background-image: url("../../assets/images/myAccount/dashed.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+/* PC端banner图样式 */
+.pc-banner {
+  margin: 0 auto;
+  width: 87%;
+  height: 780px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* banner图内文字样式 */
+.banner-text {
+  margin-top: 40px;
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Microsoft YaHei UI";
+}
+@media screen and (max-width: 1200px) {
+  .banner-text {
+    width: 80%;
+  }
+}
+.banner-text h3 {
+  text-align: center;
+}
+.banner-text p {
+  margin-top: 47px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 2.5;
+}
+/* PC端表格样式 */
+/* 表格大标题 */
+.table-container-title {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #181818;
+}
+/* 表格副标题 */
+.table-container {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
+.table-container thead {
+  display: block;
+}
+.table-container thead .highLight {
+  color: #181818;
+}
+.table-container thead span {
+  margin-right: 5px;
+}
+.table-container thead h6 {
+  background-color: #edeff1;
+  height: 64px;
+  font-size: 20px;
+  color: #181818;
+  align-items: center;
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  .table-container thead h6 {
+    font-size: 16px;
+  }
+}
+.table-container thead h6:before {
+  content: '';
+  width: 10px;
+  height: 22px;
+  display: inline-block;
+  background-color: #000;
+  margin-right: 28px;
+}
+.table-container thead h6 span {
+  margin: 0 10px;
+}
+.table-container thead tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  width: 100%;
+  background-color: #fbfbfb;
+  font-size: 16px;
+}
+@media screen and (max-width: 1200px) {
+  .table-container thead tr {
+    font-size: 14px;
+  }
+}
+.table-container thead tr td {
+  display: block;
+  flex: 2;
+  text-align: center;
+}
+.table-container thead tr td.more-width {
+  flex: 2.5;
+}
+.table-container thead tr td.less-width {
+  flex: 1.5;
+}
+.table-container tbody {
+  width: 100%;
+  display: block;
+}
+.table-container tbody tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  width: 100%;
+  font-size: 14px;
+}
+@media screen and (max-width: 1200px) {
+  .table-container tbody tr {
+    font-size: 12px;
+  }
+}
+.table-container tbody tr.cursor {
+  cursor: pointer;
+}
+.table-container tbody tr.cursor.hasId {
+  cursor: not-allowed;
+}
+.table-container tbody tr.cursor.hasId .handle {
+  color: #ccc;
+}
+.table-container tbody tr:nth-child(odd) {
+  background-color: #edeff1;
+}
+.table-container tbody tr:nth-child(even) {
+  background-color: #fbfbfb;
+}
+.table-container tbody tr:hover {
+  box-shadow: 0px -4px 15px rgba(196, 205, 214, 0.8);
+  font-weight: bold;
+}
+.table-container tbody tr td {
+  display: block;
+  flex: 2;
+  text-align: center;
+}
+.table-container tbody tr td.more-width {
+  flex: 2.5;
+}
+.table-container tbody tr td.less-width {
+  flex: 1.5;
+}
+.table-container tbody tr td.handle {
+  user-select: none;
+  color: #fc534c;
+}
+.table-container tbody tr td.handle a {
+  color: #fc534c;
+  user-select: none;
+}
+.table-container tbody tr td.money {
+  color: #fc534c;
+}
+.table-container .queryErr {
+  color: #e60000;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+}
+.isClick {
+  cursor: pointer;
+  user-select: none;
+}
+.isClick:active {
+  opacity: 0.6;
+}
+#commonTableList,
+.commonTableList,
+.commonTableTitle {
+  max-width: 1128px;
+  display: block;
+  padding: 0 20px;
+  margin-left: 60px;
+}
+#commonTableList thead,
+.commonTableList thead,
+.commonTableTitle thead {
+  display: block;
+}
+#commonTableList thead .highLight,
+.commonTableList thead .highLight,
+.commonTableTitle thead .highLight {
+  color: #181818;
+}
+#commonTableList thead span,
+.commonTableList thead span,
+.commonTableTitle thead span {
+  margin-right: 5px;
+}
+#commonTableList thead h6,
+.commonTableList thead h6,
+.commonTableTitle thead h6 {
+  background-color: #edeff1;
+  height: 64px;
+  font-size: 20px;
+  color: #181818;
+  align-items: center;
+  display: flex;
+}
+#commonTableList thead h6:before,
+.commonTableList thead h6:before,
+.commonTableTitle thead h6:before {
+  content: '';
+  width: 10px;
+  height: 22px;
+  display: inline-block;
+  background-color: #000;
+  margin-right: 28px;
+}
+#commonTableList thead h6 span,
+.commonTableList thead h6 span,
+.commonTableTitle thead h6 span {
+  margin: 0 10px;
+}
+#commonTableList thead tr,
+.commonTableList thead tr,
+.commonTableTitle thead tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  width: 100%;
+  background-color: #fbfbfb;
+  font-size: 16px;
+}
+#commonTableList thead tr td,
+.commonTableList thead tr td,
+.commonTableTitle thead tr td {
+  display: block;
+  flex: 2;
+  text-align: center;
+}
+#commonTableList thead tr td.time,
+.commonTableList thead tr td.time,
+.commonTableTitle thead tr td.time {
+  flex: 3;
+}
+#commonTableList tbody,
+.commonTableList tbody,
+.commonTableTitle tbody {
+  width: 100%;
+  display: block;
+}
+#commonTableList tbody tr,
+.commonTableList tbody tr,
+.commonTableTitle tbody tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  width: 100%;
+  font-size: 14px;
+}
+#commonTableList tbody tr.cursor,
+.commonTableList tbody tr.cursor,
+.commonTableTitle tbody tr.cursor {
+  cursor: pointer;
+}
+#commonTableList tbody tr.cursor.hasId,
+.commonTableList tbody tr.cursor.hasId,
+.commonTableTitle tbody tr.cursor.hasId {
+  cursor: not-allowed;
+}
+#commonTableList tbody tr.cursor.hasId .handle,
+.commonTableList tbody tr.cursor.hasId .handle,
+.commonTableTitle tbody tr.cursor.hasId .handle {
+  color: #ccc;
+}
+#commonTableList tbody tr:nth-child(odd),
+.commonTableList tbody tr:nth-child(odd),
+.commonTableTitle tbody tr:nth-child(odd) {
+  background-color: #edeff1;
+}
+#commonTableList tbody tr:nth-child(even),
+.commonTableList tbody tr:nth-child(even),
+.commonTableTitle tbody tr:nth-child(even) {
+  background-color: #fbfbfb;
+}
+#commonTableList tbody tr:hover,
+.commonTableList tbody tr:hover,
+.commonTableTitle tbody tr:hover {
+  box-shadow: 0px -4px 15px rgba(196, 205, 214, 0.8);
+  font-weight: bold;
+}
+#commonTableList tbody tr td,
+.commonTableList tbody tr td,
+.commonTableTitle tbody tr td {
+  display: block;
+  flex: 2;
+  text-align: center;
+}
+#commonTableList tbody tr td.time,
+.commonTableList tbody tr td.time,
+.commonTableTitle tbody tr td.time {
+  flex: 3;
+}
+#commonTableList tbody tr td.handle,
+.commonTableList tbody tr td.handle,
+.commonTableTitle tbody tr td.handle {
+  user-select: none;
+  color: #fc534c;
+}
+#commonTableList tbody tr td.handle a,
+.commonTableList tbody tr td.handle a,
+.commonTableTitle tbody tr td.handle a {
+  color: #fc534c;
+  user-select: none;
+}
+#commonTableList tbody tr td.money,
+.commonTableList tbody tr td.money,
+.commonTableTitle tbody tr td.money {
+  color: #fc534c;
+}
+#commonTableList .queryErr,
+.commonTableList .queryErr,
+.commonTableTitle .queryErr {
+  color: #e60000;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+}
+#commonTableDetial,
+.commonTableDetial {
+  padding: 0 20px;
+  max-width: 1128px;
+  margin-left: 60px;
+}
+#commonTableDetial ul li,
+.commonTableDetial ul li {
+  height: 64px;
+  width: 100%;
+  color: #000;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+#commonTableDetial ul li:hover,
+.commonTableDetial ul li:hover {
+  font-weight: bold;
+}
+#commonTableDetial ul li:nth-child(odd),
+.commonTableDetial ul li:nth-child(odd) {
+  background-color: #edeff1;
+}
+#commonTableDetial ul li:nth-child(even),
+.commonTableDetial ul li:nth-child(even) {
+  background-color: #fbfbfb;
+}
+#commonTableDetial ul li h6,
+.commonTableDetial ul li h6 {
+  background-color: #edeff1;
+  height: 64px;
+  font-size: 20px;
+  color: #181818;
+  align-items: center;
+  display: flex;
+}
+#commonTableDetial ul li h6:before,
+.commonTableDetial ul li h6:before {
+  content: '';
+  width: 10px;
+  height: 22px;
+  display: inline-block;
+  background-color: #000;
+  margin-right: 28px;
+}
+#fixed-top-header {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  #fixed-top-header {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    z-index: 50;
+    border-bottom: 1px solid #edeff1;
+  }
+  #fixed-top-header .back {
+    cursor: pointer;
+    padding: 10px 15px;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #fixed-top-header .back .icon {
+    width: 17px;
+    height: 13px;
+    background: url("../../assets/images/aiChat/back.png") no-repeat center / cover;
+  }
+  #fixed-top-header .fixed-title {
+    position: absolute;
+    top: 50%;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    color: #1a1a1a;
+    font-weight: bold;
+    transform: translateY(-50%);
+  }
+}
+.pc {
+  display: block;
+  margin-top: 70px;
+}
+@media screen and (max-width: 1200px) {
+  .pc {
+    display: none;
+  }
+}
+.mobile {
+  margin-top: 90px;
+  display: none;
+  min-height: calc(50vh);
+}
+@media screen and (max-width: 1200px) {
+  .mobile {
+    display: block;
+  }
+}
+.mobile-myAccount .myAccountHead {
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.mobile-myAccount .myAccountHead .Head-padding {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-myAccount .myAccountHead .Head-padding .left {
+  background-image: url(../../assets/images/myAccount/back.png);
+  width: 30px;
+  height: 50px;
+  background-size: 17px 13px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.mobile-myAccount .myAccountHead .Head-padding .left:active {
+  opacity: 0.5;
+}
+.mobile-myAccount .myAccountHead .Head-padding .center {
+  text-align: center;
+  flex: 1;
+  font-size: 16px;
+  color: #1a1a1a;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+}
+.mobile-myAccount .myAccountHead .Head-padding .right {
+  width: 32px;
+  height: 0;
+  background-color: transparent;
+}
+.mobile-myAccount .myAccountHead.up-box .Head-padding .center i {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  background-image: url("../../assets/images/myAccount/right-row.png");
+  background-repeat: no-repeat;
+  background-size: 8px 12px;
+  background-position: center;
+  transform: rotate(90deg);
+  transition: all 0.5s;
+  margin-left: 15px;
+}
+.mobile-myAccount .myAccountHead.up-box .Head-padding .center i.close {
+  transform: rotate(-90deg);
+}
+.mobile-myAccount .myAccountHead.up-box .headUpBox {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgba(11, 24, 48, 0.6);
+  transition: all 0.5s ;
+  z-index: 99;
+  overflow: hidden;
+}
+.mobile-myAccount .myAccountHead.up-box .headUpBox.close {
+  height: calc(50vh);
+}
+.mobile-myAccount .myAccountHead.up-box .headUpBox ul {
+  background-color: #fff;
+}
+.mobile-myAccount .myAccountHead.up-box .headUpBox ul li {
+  height: 40px;
+  font-size: 14px;
+  color: #181818;
+  text-align: center;
+  line-height: 40px;
+}
+.mobile-myAccount .myAccountBody {
+  padding: 0 20px;
+}
+.mobile-myAccount .myAccountBody h3 {
+  font-size: 20px;
+  color: #181818;
+  padding: 45px 0 10px;
+  text-align: center;
+  font-weight: bold;
+}
+@media screen and (max-width: 1025px) {
+  .mobile-myAccount .myAccountBody .mobileTable .titleReward {
+    display: none;
+  }
+}
+.mobile-myAccount .myAccountBody .mobileTable h6 {
+  padding: 10px 0;
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+  background-color: #edeff1;
+}
+.mobile-myAccount .myAccountBody .mobileTable h6:before {
+  content: '';
+  width: 5px;
+  height: 15px;
+  background-color: #000;
+  margin-right: 15px;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul.noTitle li {
+  width: 100%;
+  font-size: 14px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul.noTitle li:nth-child(odd) {
+  background-color: #fbfbfb;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul.noTitle li:nth-child(even) {
+  background-color: #edeff1;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul.noTitle li span.sum {
+  font-weight: bold;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul.noTitle li i.money {
+  color: #fc534c;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul.view li {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul.view li .view-btn {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul.view li .view-btn span {
+  display: block;
+  width: 18px;
+  height: 24px;
+  background-image: url('../../assets/images/myAccount/right-row.png');
+  background-size: 8px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul.view li .info {
+  display: block;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul.view li .info p {
+  padding: 10px 0;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul li {
+  width: 100%;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul li:nth-child(odd) {
+  background-color: #fbfbfb;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul li:nth-child(even) {
+  background-color: #edeff1;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul li .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul li .count-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul li .count-time {
+  font-size: 14px;
+  color: #ccc;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul li .count {
+  color: #181818;
+}
+.mobile-myAccount .myAccountBody .mobileTable ul li .time {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-myAccount .myAccountBody .mobileTable .error {
+  color: #e60000;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+.bread {
+  font-size: 12px;
+  color: #181818;
+  margin: 0 0 20px 80px;
+}
+.bread a {
+  color: #FC534C;
+  font-weight: bold;
+}
+.add-line div,
+.add-line span,
+.add-line p {
+  color: #fff !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#slide {
+  overflow: hidden;
+}
+@media screen and (max-width: 1024px) {
+  #slide {
+    margin-bottom: 30px;
+  }
+}
+#slide .img {
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  background-color: #032e43;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: width .4s, height .4s, top .4s, left .4s;
+}
+#slide .img:nth-child(1) {
+  width: 60px;
+  height: 60px;
+  left: 0;
+  font-size: 16px;
+}
+#slide .img:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  left: 110px;
+  font-size: 30px;
+}
+#slide .img:nth-child(3) {
+  font-size: 16px;
+  width: 60px;
+  height: 60px;
+  left: 250px;
+}

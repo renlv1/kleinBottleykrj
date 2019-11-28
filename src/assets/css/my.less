@@ -1,0 +1,447 @@
+#btn-red-submit{
+  cursor: pointer;
+  width: 100%;
+  height: 68px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #fc534c;
+  @media screen and (max-width: 1200px){
+    height: 46px;
+    border-radius: 0;
+  }
+}
+.money-info,.binding-item{
+  .desc{
+    word-break: break-all;
+    word-wrap:break-word;
+  }
+}
+.warm-num{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.data-flex{
+  .el-date-editor{
+    flex: 1;
+    input{
+      text-align: center;
+    }
+  }
+}
+textarea{
+  border: none;
+  outline: none;
+  resize: none;
+}
+#record-title{
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  font-size: 22px;
+  color: #181818;
+  background-color: #edeff1;
+  @media screen and (max-width: 1200px){
+    display: none;
+  }
+  .line{
+    display: block;
+    width: 10px;
+    height: 22px;
+    margin-right: 30px;
+    background-color: #032e43;
+  }
+  .pointer{
+    cursor: pointer;
+  }
+  a{
+    color: #181818;
+  }
+}
+.money-info .tips{
+  color: #FC534C;
+  .border-bottom{
+    border-bottom: 1px solid #FC534C;
+  }
+}
+// 消息提示
+.el-notification {
+  &:nth-child(3) {
+    top: 130px !important;
+  }
+}
+.alertitem {
+  .flex-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    .img-box {
+      width: 46px;
+      height: 44px;
+      background: url("../images/myAccount/orderTrade/tixian.png") no-repeat center / cover;
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+    .right {
+      margin-left: 16px;
+      font-size: 14px;
+      color: #181818;
+      .money {
+        margin-top: 12px;
+      }
+    }
+  }
+  .alert-item {
+    width: 380px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #e0e0e0;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 5s linear;
+    right: -1000px;
+    &.translatecls {
+      right: 0;
+    }
+    .icon {
+      position: absolute;
+      cursor: pointer;
+      right: 20px;
+      top: 14px;
+      width: 14px;
+      height: 14px;
+      background: url("../../assets/images/sieMoney/close.svg") no-repeat center / cover;
+    }
+    .click {
+      color: #FC534C;
+      display: flex;
+      justify-content: flex-end;
+      .cursor {
+        cursor: pointer;
+      }
+    }
+  }
+}
+// 头部
+#fixed-top-header{
+  display: none;
+  @media screen and (max-width: 1200px){
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #edeff1;
+    z-index: 10;
+    .back{
+      cursor: pointer;
+      padding: 10px 15px;
+      position: absolute;
+      z-index: 10;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      .icon {
+        width: 17px;
+        height: 13px;
+        background: url("../../assets/images/aiChat/back.png") no-repeat center / cover;
+      }
+    }
+    .fixed-title {
+      position: absolute;
+      top: 50%;
+      font-size: 16px;
+      width: 100%;
+      text-align: center;
+      color: #1a1a1a;
+      font-weight: bold;
+      transform: translateY(-50%);
+    }
+    .padding{
+      padding: 0 15px;
+      .margin{
+        margin-top: 50px;
+      }
+    }
+  }
+}
+.dashed-line{
+  width: 100%;
+  height: 1px;
+  background: url("../../assets/images/myAccount/dashed.png") repeat-x;
+}
+#order-table{
+  margin: 60px 0 80px;
+  @media screen and (max-width: 1200px){
+    margin: 30px 0;
+    padding: 0 15px;
+  }
+  .flex-item{
+    display: flex;
+    align-items: center;
+    height: 68px;
+    font-size: 18px;
+    color: #181818;
+    &:nth-child(odd) {
+      background-color: #edeff1;
+    }
+    &:nth-child(even) {
+      background-color: #fbfbfb;
+    }
+    @media screen and (max-width: 1200px){
+      height: 60px;
+      font-size: 14px;
+    }
+    div {
+      flex: 1;
+    }
+    .text-left{
+      padding-left: 52px
+    }
+  }
+  .pc-table{
+    @media screen and (max-width: 1200px){
+      display: none;
+    }
+    @media screen and (min-width: 1200px){
+      display: block;
+    }
+  }
+  .mobile-table{
+    @media screen and (max-width: 1200px){
+      display: block;
+    }
+    @media screen and (min-width: 1200px){
+      display: none;
+    }
+    .flex-item{
+      justify-content: space-between;
+      padding: 0 15px;
+      div{
+        flex: none;
+      }
+      .text-left{
+        padding: 0;
+      }
+    }
+  }
+  .await-status{
+    color: #605f5f;
+  }
+  .processed-status{
+    color: #fc534c;
+    @media screen and (max-width: 1200px){
+      color: #003399 !important;
+      font-weight: bold;
+    }
+  }
+}
+.btn-switch{
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  .btn{
+    border-radius: 4px;
+    cursor: pointer;
+    width: 218px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #181818;
+    background-color: #edeff1;
+    &:nth-child(1){
+      margin-right: 30px;
+    }
+  }
+  .btn-checked{
+    background-color: #fc534c;
+    color: #fff
+  }
+}
+#account-banduls{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .account-band-list{
+    width: 50%;
+    .list-cont{
+      background-color: #fafbfc;
+      border: 1px solid #d9d9d9;
+      padding: 30px 40px 30px 50px;
+    }
+    &:nth-child(odd){
+      padding-right: 20px;
+    }
+    &:nth-child(even){
+      padding-left: 20px;
+    }
+    &:nth-child(n + 3){
+      margin-top: 40px;
+    }
+    .desc{
+      font-size: 16px;
+      color: #6D6D6D;
+      margin-bottom: 20px;
+      word-break: break-all;
+      word-wrap:break-word;
+      .bankname{
+        margin-right: 40px;
+      }
+    }
+    .number{
+      font-size: 20px;
+    }
+    .name{
+      color: #515151;
+      margin-right: 30px;
+    }
+    .btn-info{
+      display: flex;
+      justify-content: flex-end;
+      color: #fc534c;
+      font-size: 20px;
+      .btns{
+        cursor: pointer;
+        &:first-child{
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+}
+// 去掉ie input 的删除图标
+input{
+  &::-ms-clear,&::-ms-reveal{
+    display:none;
+  }
+}
+input{
+  &::-webkit-input-placeholder{
+    color:#afb0b3;
+    font-family: "Microsoft YaHei UI Light";
+  }
+  &:-moz-placeholder{
+    color:#afb0b3;
+    font-family: "Microsoft YaHei UI Light";
+  }
+  &::-moz-placeholder{
+    color:#afb0b3;
+    font-family: "Microsoft YaHei UI Light";
+  }
+  &:-ms-input-placeholder{
+    color:#afb0b3;
+    font-family: "Microsoft YaHei UI Light";
+  }
+  @media screen and (max-width: 1200px){
+    line-height: 50px;
+  }
+}
+input[type=number]{
+  -moz-appearance:textfield;
+}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{
+  -webkit-appearance:none;margin:0;
+}
+.pay-dialog-transfer{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 998;
+  background-color: rgba(11,27,48,0.6);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .dialog-content{
+    position: relative;
+    width: 600px;
+    padding: 120px 80px 157px 80px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #d7d9db;
+    background-color: #fff;
+    @media screen and (max-width: 768px){
+      width: 90%;
+      padding: 50px 20px;
+    }
+    .close-confirm{
+      position: absolute;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+      padding: 30px 40px;
+      @media screen and (max-width: 768px){
+        padding: 20px;
+      }
+      .close-icon{
+        width: 24px;
+        height: 24px;
+        background: url("../../assets/images/myAccount/myDon/delete.svg") no-repeat center / cover
+      }
+    }
+    .dialog-box{
+      width: 100%;
+      .red-text{
+        color: #fc534c;
+      }
+      .confirmShow{
+        .dialog-title{
+          font-size: 20px;
+          color: #fc534c;
+          text-align: center;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        .dialog-text{
+          font-size: 16px;
+          color: #181818;
+          text-align: center;
+        }
+      }
+      .text-error{
+        font-size: 24px;
+        color: #fc534c;
+        text-align: center;
+        @media screen and (max-width: 768px){
+          font-size: 14px;
+        }
+      }
+      .pay-confim-btn{
+        margin-top: 40px;
+        width: 100%;
+        height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fc534c;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: 0 5px 10px #d7d9db;
+        font-size: 16px;
+        @media screen and (max-width: 768px){
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}

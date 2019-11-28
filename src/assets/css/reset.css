@@ -1,0 +1,110 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  list-style: none;
+  box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+.el-date-editor{
+  flex: 1;
+  margin-left: 0;
+}
+ol, ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1,h2,h3,h4,h5,h6,b,strong{
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+}
+em, i {
+  font-style: normal;
+}
+input, button {
+  outline: none;
+}
+/* 正在加载中的loading样式 */
+.el-loading-spinner .path{
+  stroke-width: 3 !important;
+  stroke: #ccc !important;
+}
+button{
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;
+  outline: none;
+}
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 180px !important;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: flex-start;
+}
+.swiper-slide-next {
+  transform: scale(1.6);
+  transition:all .2s ease-in 0s;
+  z-index: 20;
+}
+#kleinCircle {
+  width: 60%;
+  height: 100px;
+  display: flex;
+  position: relative;
+}
+#kleinCircle li {
+  width: 60px;
+  height: 60px;
+  background-color: #032e43;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  color: #fff;
+  position: absolute;
+  left: 0px;
+  transition: all 2s;
+}
+#kleinCircle li:first-child {
+  top: 20px;
+}
+#kleinCircle li.circleActive {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 100px;
+  top: 0
+}
+#kleinCircle li.circleNext {
+  top: 20px;
+  left: 300px;
+}
+body{
+  -webkit-tap-highlight-color: transparent;
+}
